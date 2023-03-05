@@ -1,0 +1,43 @@
+.home {
+  background-color: white;
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  background-color: red;
+  width: 35%;
+  background-image: url("/src/assets/bg-sidebar.jpg");
+  background-position: top left, top left;
+  background-repeat: repeat, no-repeat;
+  background-size: cover, 150%;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-container {
+  padding-right: 100px;
+  flex-direction: column;
+  display: flex;
+  align-items: flex-end;
+}
+
+.main {
+  background-color: blue;
+  width: calc(100% - 35%);
+}
+
+@media screen and (max-width: 980px) {
+  .home {
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .main {
+    width: 100%;
+  }
+}
